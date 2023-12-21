@@ -1,0 +1,81 @@
+
+      body{
+        background-color: #07252d;
+        background-size: cover; /* Ensure the background image covers the entire container */
+        background-repeat: no-repeat;
+        background-position: center; /* Center the background image */
+      }
+      .image-item {
+        text-align: center; /* Center text under each image */
+      }
+      
+      h2 {
+        color: #fff; /* Adjust color as needed */
+        font-size: 1.5em; /* Adjust font size as needed */
+        margin-top: 50px; /* Adjust spacing between image and header */
+        font-family: "Cabin", sans-serif;
+        font-size: 20px;
+        letter-spacing: 15px;
+        color: #0e3742;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+            -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+            line-height: 0.70em;
+            outline: none;
+            animation: animate 5s linear forwards;
+      }
+      .image-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Set the body to take up the full height of the viewport */
+        margin: 0; /* Remove default margin */
+        margin-top: -40px; /* Adjust the negative margin to move the images up */
+      }
+      h1 {
+        font-family: "Cabin", sans-serif;
+        font-size: 8em;
+        letter-spacing: 15px;
+        color: #0e3742;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+            -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+            line-height: 0.70em;
+            outline: none;
+            animation: animate 2s linear forwards;
+      }
+      @keyframes animate
+      {
+        0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+        {
+            color: #0e3742;
+            text-shadow: none;
+        }
+        18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+        {
+            color: #fff;
+            text-shadow: 0 0 10px #03bcf2,
+            0 0 20px #03bcf2,
+            0 0 40px #03bcf2,
+            0 0 80px #03bcf2,
+            0 0 160px #03bcf2;
+        }
+      
+      }
+
+      .resizeable-image {
+        width: 330px;
+        height: 400px;
+        object-fit: cover;
+        margin-right: 10px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2), /* Reduce opacity to 0.3 */
+              0 0 20px rgba(255, 255, 255, 0.2),
+              0 0 40px rgba(255, 255, 255, 0.2),
+              0 0 80px rgba(255, 255, 255, 0.2),
+              0 0 160px rgba(255, 255, 255, 0.2);
+      }
+      
+    
